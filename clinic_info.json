@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Where is the clinic located?",
+    "answer": "The clinic is located at 24/7 HealthCare Building, Near Central Mall, MG Road."
+  },
+  {
+    "question": "What are the clinic's operating hours?",
+    "answer": "The clinic is open Monday to Saturday from 9:00 AM to 6:00 PM. It is closed on Sundays."
+  },
+  {
+    "question": "Is parking available at the clinic?",
+    "answer": "Yes, free parking is available behind the clinic building. Additional paid parking is available in the mall next door."
+  },
+  {
+    "question": "What documents should I bring for my first visit?",
+    "answer": "You should bring a valid ID, previous medical records, prescriptions, and any recent lab results if available."
+  },
+  {
+    "question": "What insurance providers do you accept?",
+    "answer": "The clinic accepts Aetna, Blue Cross Blue Shield, UnitedHealthcare, Cigna, and Medicare."
+  },
+  {
+    "question": "What payment methods are accepted?",
+    "answer": "The clinic accepts credit and debit cards, UPI, cash, and online payments."
+  },
+  {
+    "question": "What is the cancellation policy?",
+    "answer": "Appointments can be cancelled up to 4 hours before the visit without charges. Late cancellations may incur a fee."
+  },
+  {
+    "question": "What is the clinic's COVID-19 policy?",
+    "answer": "Masks are optional, but patients with flu-like symptoms are requested to wear masks. Sanitizers are available throughout the clinic."
+  },
+  {
+    "question": "Do I need an appointment, or can I walk in?",
+    "answer": "Walk-ins are accepted for general consultations, but appointments are recommended to avoid wait times."
+  },
+  {
+    "question": "How early should I arrive for my appointment?",
+    "answer": "New patients should arrive 15 minutes early; returning patients should arrive at least 5 minutes early."
+  },
+  {
+    "question": "Do you have wheelchair access?",
+    "answer": "Yes, the clinic is fully wheelchair accessible with ramps and elevator access."
+  },
+  {
+    "question": "How can I contact the clinic?",
+    "answer": "You can call the clinic at +1-555-123-4567 for any assistance."
+  },
+  {
+    "question": "Do you offer emergency services?",
+    "answer": "No, the clinic does not offer emergency services. For emergencies, please visit your nearest hospital."
+  },
+  {
+    "question": "How long does a typical consultation take?",
+    "answer": "A typical consultation lasts 15–30 minutes depending on the case."
+  },
+  {
+    "question": "Do you provide lab tests?",
+    "answer": "Yes, the clinic has an on-site diagnostic lab for blood tests, urine tests, and imaging."
+  },
+  {
+    "question": "Can I reschedule my appointment?",
+    "answer": "Yes, appointments can be rescheduled once at no extra cost, as long as it is done at least 4 hours before the visit."
+  },
+  {
+    "question": "Do you offer telemedicine consultations?",
+    "answer": "Yes, online video consultations are available Monday to Friday from 10 AM to 4 PM."
+  },
+  {
+    "question": "Is there a pharmacy in the clinic?",
+    "answer": "Yes, an in-house pharmacy is available for your convenience."
+  },
+  {
+    "question": "Do you treat children?",
+    "answer": "Yes, the clinic provides pediatric services and has a dedicated child specialist."
+  },
+  {
+    "question": "Are vaccines available at the clinic?",
+    "answer": "Yes, standard vaccines such as flu shots, tetanus, and travel vaccines are available."
+  }
+]

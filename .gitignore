@@ -1,0 +1,55 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.log
+
+# ---- Virtual Environment ----
+venv/
+ENV/
+env/
+.venv/
+
+# ---- Environment Variables ----
+.env
+.env.local
+*.env.*
+
+# ---- ChromaDB Vector Store ----
+chroma_store/
+vectordb/
+db/
+index/
+*.sqlite
+*.duckdb
+*.parquet
+
+# ---- Cache ----
+.cache/
+*.cache
+.cache_dir/
+tmp/
+temp/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.swp
+*~
+*.sublime-project
+*.sublime-workspace
+
+# ---- OS Files ----
+.DS_Store
+Thumbs.db
+
+# ---- Build / Distribution ----
+dist/
+build/
+*.egg-info/
