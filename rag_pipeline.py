@@ -13,16 +13,10 @@ from langchain_core.output_parsers import StrOutputParser
 load_dotenv()
 DEEPSEEK_KEY = os.getenv("DEEPSEEK_API_KEY")
 
-# --------------------------
-# Embedding model (HuggingFace)
-# --------------------------
 embedding_model = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
 
-# --------------------------
-# Load Vector DB
-# --------------------------
 def load_vector_db():
     with open("clinic_info.json", "r") as f:
         data = json.load(f)
@@ -41,9 +35,6 @@ def load_vector_db():
 vectordb = load_vector_db()
 retriever = vectordb.as_retriever(search_kwargs={"k": 3})
 
-# --------------------------
-# Prompt Template
-# --------------------------
 prompt = PromptTemplate.from_template("""
 You are a clinic FAQ assistant. Answer ONLY using the context. Do NOT hallucinate.
 
@@ -55,9 +46,6 @@ Question: {question}
 Answer clearly:
 """)
 
-# --------------------------
-# DeepSeek LLM (OpenAI-compatible)
-# --------------------------
 llm = ChatOpenAI(
     model="deepseek-chat",
     api_key=DEEPSEEK_KEY,
@@ -65,9 +53,6 @@ llm = ChatOpenAI(
     temperature=0
 )
 
-# --------------------------
-# RAG Chain using LCEL
-# --------------------------
 def format_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs)
 
@@ -81,9 +66,6 @@ qa_chain = (
     | StrOutputParser()
 )
 
-# --------------------------
-# Follow-up question logic
-# --------------------------
 def cosine_similarity(a, b):
     a, b = np.array(a), np.array(b)
     return float(np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b)))
@@ -96,7 +78,6 @@ def answer_question(user_q: str):
 
     q_emb = embedding_model.embed_query(user_q)
 
-    # semantic follow-up detection
     if last_embedding is not None:
         sim = cosine_similarity(q_emb, last_embedding)
         is_followup = sim > 0.75
@@ -105,7 +86,6 @@ def answer_question(user_q: str):
         is_followup = False
         final_q = user_q
 
-    # run RAG
     answer = qa_chain.invoke(final_q)
 
     last_question = user_q
